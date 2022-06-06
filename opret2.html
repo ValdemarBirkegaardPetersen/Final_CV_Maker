@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resumeoplysninger</title>
+    <link rel="stylesheet" href="Styles/opret1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Libraries/jquery.storage.js"></script>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="panel">
+            <div class="panel-header">
+                <h1 class="panel-header-title">Indsæt resumeoplysninger
+                    <h1 />
+            </div>
+            <form class="form" action="javascript:void(0);">
+                <div class="input">
+                    <label class="input-label">Fortæl lidt om dig selv (maks 500 tegn)</label>
+                    <input id="omdig" type="text" maxlength="100"/>
+                </div>
+
+                <div class="input">
+                    <label class="input-label">Sprog</label>
+                    <input id="sprog" type="adressse" class="input-field" />
+                </div>
+                <div class="input">
+                    <label class="input-label">Færdigheder</label>
+                    <input id="skills" type="postnummer" class="input-field" />
+                </div>
+                <div class="input">
+                    <label class="input-label">Certifikater</label>
+                    <input id="certs" type="by" class="input-field" />
+                </div>
+                <div class="input">
+                    <a id="input-submit" class="input-submit" href="opret3.html" onclick="myFunction()">Videre</a>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        $("#omdig").replaceWith('<textarea id="omdig" maxlength="500"></textarea>');
+    </script>
+
+    <script>
+
+
+        function myFunction() {
+
+            var omdig = document.getElementById("omdig").value;
+            var sprog = document.getElementById("sprog").value;
+            var skills = document.getElementById("skills").value;
+            var certs = document.getElementById("certs").value;
+
+            $.sessionStorage('omdig', omdig);
+            $.sessionStorage('sprog', sprog);
+            $.sessionStorage('skills', skills);
+            $.sessionStorage('certs', certs);
+        }
+
+
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uddanelser</title>
+    <link rel="stylesheet" href="Styles/opret2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Libraries/jquery.storage.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="panel">
+            <div class="panel-header">
+                <h1 class="panel-header-title">Udfyld Uddanelser
+                    <h1 />
+            </div>
+
+            <form class="form" action="javascript:void(0);">
+
+                <div class="input">
+                    <input placeholder="Uddanelsens navn" id="u-navn1" type="text" class="input-field" />
+                </div>
+                <div class="input">
+                    <input placeholder="Uddanelsens sted" id="u-sted1" type="text" class="input-field" />
+                </div>
+
+
+                <div class="form__fields-group col-2">
+                    <div class="form-element col-2" name="position-education.items[0].startMonth">
+                        <label class="">Startdato</label><select id="s1" class="form-select-custom" name="education.items[0].startMonth">
+                            <option value="">Vis ikke</option>
+                            <option value="hidden">Vis kun år</option>
+                            <option value="1">januar</option>
+                            <option value="2">februar</option>
+                            <option value="3">marts</option>
+                            <option value="4">april</option>
+                            <option value="5">maj</option>
+                            <option value="6">juni</option>
+                            <option value="7">juli</option>
+                            <option value="8">august</option>
+                            <option value="9">september</option>
+                            <option value="10">oktober</option>
+                            <option value="11">november</option>
+                            <option value="12">december</option>
+                        </select><i class="form-select-custom--arrow"></i>
+                    </div>
+                    <div class="form-element col-2" name="position-education.items[0].startYear">
+                        <label class="">&nbsp;</label><select id="s2" class="form-select-custom form__select-element"
+                            name="education.items[0].startYear">
+                            <option value="2030">2030</option>
+                            <option value="2029">2029</option>
+                            <option value="2028">2028</option>
+                            <option value="2027">2027</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                            <option value="1979">1979</option>
+                            <option value="1978">1978</option>
+                            <option value="1977">1977</option>
+                            <option value="1976">1976</option>
+                            <option value="1975">1975</option>
+                            <option value="1974">1974</option>
+                            <option value="1973">1973</option>
+                            <option value="1972">1972</option>
+                            <option value="1971">1971</option>
+                            <option value="1970">1970</option>
+                            <option value="1969">1969</option>
+                            <option value="1968">1968</option>
+                            <option value="1967">1967</option>
+                            <option value="1966">1966</option>
+                            <option value="1965">1965</option>
+                            <option value="1964">1964</option>
+                            <option value="1963">1963</option>
+                            <option value="1962">1962</option>
+                            <option value="1961">1961</option>
+                            <option value="1960">1960</option>
+                        </select><i class="form-select-custom--arrow"></i>
+                    </div>
+                </div>
+                <div class="form__fields-group col-2">
+                    <div class="form-element col-2" name="position-education.items[0].startMonth">
+                        <label class="">Slutdato &nbsp</label><select id="s3" class="form-select-custom" name="education.items[0].startMonth">
+                            <option value="">Vis ikke</option>
+                            <option value="hidden">Vis kun år</option>
+                            <option value="1">januar</option>
+                            <option value="2">februar</option>
+                            <option value="3">marts</option>
+                            <option value="4">april</option>
+                            <option value="5">maj</option>
+                            <option value="6">juni</option>
+                            <option value="7">juli</option>
+                            <option value="8">august</option>
+                            <option value="9">september</option>
+                            <option value="10">oktober</option>
+                            <option value="11">november</option>
+                            <option value="12">december</option>
+                        </select><i class="form-select-custom--arrow"></i>
+                    </div>
+                    <div class="form-element col-2" name="position-education.items[0].startYear">
+                        <label class="">&nbsp;</label><select id="s4" class="form-select-custom form__select-element"
+                            name="education.items[0].startYear">
+                            <option value="2030">2030</option>
+                            <option value="2029">2029</option>
+                            <option value="2028">2028</option>
+                            <option value="2027">2027</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                            <option value="1979">1979</option>
+                            <option value="1978">1978</option>
+                            <option value="1977">1977</option>
+                            <option value="1976">1976</option>
+                            <option value="1975">1975</option>
+                            <option value="1974">1974</option>
+                            <option value="1973">1973</option>
+                            <option value="1972">1972</option>
+                            <option value="1971">1971</option>
+                            <option value="1970">1970</option>
+                            <option value="1969">1969</option>
+                            <option value="1968">1968</option>
+                            <option value="1967">1967</option>
+                            <option value="1966">1966</option>
+                            <option value="1965">1965</option>
+                            <option value="1964">1964</option>
+                            <option value="1963">1963</option>
+                            <option value="1962">1962</option>
+                            <option value="1961">1961</option>
+                            <option value="1960">1960</option>
+                        </select><i class="form-select-custom--arrow"></i>
+                        
+                    </div>
+
+                </div>
+
+
+                <div class="js-hiddenform" style="display: none;">
+                    <div class="form__fields-group col-2">
+                        <p></p>
+                        <div class="input">
+                            <input placeholder="Uddanelsens navn" id="u-navn2" type="text" class="input-field" />
+                        </div>
+                        <div class="input">
+                            <input placeholder="Uddanelsens sted" id="u-sted2" type="text" class="input-field" />
+                        </div>
+                        <div class="form-element col-2" name="position-education.items[0].startMonth">                            
+                            <label class="">Startdato</label><select id="d1" class="form-select-custom" name="education.items[0].startMonth">
+                                <option value="">Vis ikke</option>
+                                <option value="hidden">Vis kun år</option>
+                                <option value="1">januar</option>
+                                <option value="2">februar</option>
+                                <option value="3">marts</option>
+                                <option value="4">april</option>
+                                <option value="5">maj</option>
+                                <option value="6">juni</option>
+                                <option value="7">juli</option>
+                                <option value="8">august</option>
+                                <option value="9">september</option>
+                                <option value="10">oktober</option>
+                                <option value="11">november</option>
+                                <option value="12">december</option>
+                            </select><i class="form-select-custom--arrow"></i>
+                        </div>
+                        <div class="form-element col-2" name="position-education.items[0].startYear">
+                            <label class="">&nbsp;</label><select id="d2" class="form-select-custom form__select-element"
+                                name="education.items[0].startYear">
+                                <option value="2030">2030</option>
+                                <option value="2029">2029</option>
+                                <option value="2028">2028</option>
+                                <option value="2027">2027</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                                <option value="1979">1979</option>
+                                <option value="1978">1978</option>
+                                <option value="1977">1977</option>
+                                <option value="1976">1976</option>
+                                <option value="1975">1975</option>
+                                <option value="1974">1974</option>
+                                <option value="1973">1973</option>
+                                <option value="1972">1972</option>
+                                <option value="1971">1971</option>
+                                <option value="1970">1970</option>
+                                <option value="1969">1969</option>
+                                <option value="1968">1968</option>
+                                <option value="1967">1967</option>
+                                <option value="1966">1966</option>
+                                <option value="1965">1965</option>
+                                <option value="1964">1964</option>
+                                <option value="1963">1963</option>
+                                <option value="1962">1962</option>
+                                <option value="1961">1961</option>
+                                <option value="1960">1960</option>
+                            </select><i class="form-select-custom--arrow"></i>
+                        </div>
+                    </div>
+                    <div class="form__fields-group col-2">
+                        <div class="form-element col-2" name="position-education.items[0].startMonth">
+                            <label class="">Slutdato &nbsp</label><select id="d3" class="form-select-custom" name="education.items[0].startMonth">
+                                <option value="">Vis ikke</option>
+                                <option value="hidden">Vis kun år</option>
+                                <option value="1">januar</option>
+                                <option value="2">februar</option>
+                                <option value="3">marts</option>
+                                <option value="4">april</option>
+                                <option value="5">maj</option>
+                                <option value="6">juni</option>
+                                <option value="7">juli</option>
+                                <option value="8">august</option>
+                                <option value="9">september</option>
+                                <option value="10">oktober</option>
+                                <option value="11">november</option>
+                                <option value="12">december</option>
+                            </select><i class="form-select-custom--arrow"></i>
+                        </div>
+                        <div class="form-element col-2" name="position-education.items[0].startYear">
+                            <label class="">&nbsp;</label><select id="d4" class="form-select-custom form__select-element"
+                                name="education.items[0].startYear">
+                                <option value="2030">2030</option>
+                                <option value="2029">2029</option>
+                                <option value="2028">2028</option>
+                                <option value="2027">2027</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                                <option value="1979">1979</option>
+                                <option value="1978">1978</option>
+                                <option value="1977">1977</option>
+                                <option value="1976">1976</option>
+                                <option value="1975">1975</option>
+                                <option value="1974">1974</option>
+                                <option value="1973">1973</option>
+                                <option value="1972">1972</option>
+                                <option value="1971">1971</option>
+                                <option value="1970">1970</option>
+                                <option value="1969">1969</option>
+                                <option value="1968">1968</option>
+                                <option value="1967">1967</option>
+                                <option value="1966">1966</option>
+                                <option value="1965">1965</option>
+                                <option value="1964">1964</option>
+                                <option value="1963">1963</option>
+                                <option value="1962">1962</option>
+                                <option value="1961">1961</option>
+                                <option value="1960">1960</option>
+                                
+                            </select><i class="form-select-custom--arrow"></i>
+                        </div>
+                    </div>                    
+                </div>
+
+
+                <div class="js-hiddenform2" style="display: none;" >
+                    <div class="form__fields-group col-2">
+                        <p></p>
+                        <div class="input">
+                            <input placeholder="Uddanelsens navn" id="u-navn3" type="text" class="input-field" />
+                        </div>
+                        <div class="input">
+                            <input placeholder="Uddanelsens sted" id="u-sted3" type="text" class="input-field" />
+                        </div>
+                        <div class="form-element col-2" name="position-education.items[0].startMonth">
+
+                            
+                            
+                            <label class="">Startdato</label><select id="g1" class="form-select-custom" name="education.items[0].startMonth">
+                                <option value="">Vis ikke</option>
+                                <option value="hidden">Vis kun år</option>
+                                <option value="1">januar</option>
+                                <option value="2">februar</option>
+                                <option value="3">marts</option>
+                                <option value="4">april</option>
+                                <option value="5">maj</option>
+                                <option value="6">juni</option>
+                                <option value="7">juli</option>
+                                <option value="8">august</option>
+                                <option value="9">september</option>
+                                <option value="10">oktober</option>
+                                <option value="11">november</option>
+                                <option value="12">december</option>
+                            </select><i class="form-select-custom--arrow"></i>
+                        </div>
+                        <div class="form-element col-2" name="position-education.items[0].startYear">
+                            <label class="">&nbsp;</label><select id="g2" class="form-select-custom form__select-element"
+                                name="education.items[0].startYear">
+                                <option value="2030">2030</option>
+                                <option value="2029">2029</option>
+                                <option value="2028">2028</option>
+                                <option value="2027">2027</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                                <option value="1979">1979</option>
+                                <option value="1978">1978</option>
+                                <option value="1977">1977</option>
+                                <option value="1976">1976</option>
+                                <option value="1975">1975</option>
+                                <option value="1974">1974</option>
+                                <option value="1973">1973</option>
+                                <option value="1972">1972</option>
+                                <option value="1971">1971</option>
+                                <option value="1970">1970</option>
+                                <option value="1969">1969</option>
+                                <option value="1968">1968</option>
+                                <option value="1967">1967</option>
+                                <option value="1966">1966</option>
+                                <option value="1965">1965</option>
+                                <option value="1964">1964</option>
+                                <option value="1963">1963</option>
+                                <option value="1962">1962</option>
+                                <option value="1961">1961</option>
+                                <option value="1960">1960</option>
+                            </select><i class="form-select-custom--arrow"></i>
+                        </div>
+                    </div>
+                    <div class="form__fields-group col-2">
+                        <div class="form-element col-2" name="position-education.items[0].startMonth">
+                            <label class="">Slutdato &nbsp</label><select id="g3" class="form-select-custom" name="education.items[0].startMonth">
+                                <option value="">Vis ikke</option>
+                                <option value="hidden">Vis kun år</option>
+                                <option value="1">januar</option>
+                                <option value="2">februar</option>
+                                <option value="3">marts</option>
+                                <option value="4">april</option>
+                                <option value="5">maj</option>
+                                <option value="6">juni</option>
+                                <option value="7">juli</option>
+                                <option value="8">august</option>
+                                <option value="9">september</option>
+                                <option value="10">oktober</option>
+                                <option value="11">november</option>
+                                <option value="12">december</option>
+                            </select><i class="form-select-custom--arrow"></i>
+                        </div>
+                        <div class="form-element col-2" name="position-education.items[0].startYear">
+                            <label class="">&nbsp;</label><select id="g4" class="form-select-custom form__select-element"
+                                name="education.items[0].startYear">
+                                <option value="2030">2030</option>
+                                <option value="2029">2029</option>
+                                <option value="2028">2028</option>
+                                <option value="2027">2027</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                                <option value="1979">1979</option>
+                                <option value="1978">1978</option>
+                                <option value="1977">1977</option>
+                                <option value="1976">1976</option>
+                                <option value="1975">1975</option>
+                                <option value="1974">1974</option>
+                                <option value="1973">1973</option>
+                                <option value="1972">1972</option>
+                                <option value="1971">1971</option>
+                                <option value="1970">1970</option>
+                                <option value="1969">1969</option>
+                                <option value="1968">1968</option>
+                                <option value="1967">1967</option>
+                                <option value="1966">1966</option>
+                                <option value="1965">1965</option>
+                                <option value="1964">1964</option>
+                                <option value="1963">1963</option>
+                                <option value="1962">1962</option>
+                                <option value="1961">1961</option>
+                                <option value="1960">1960</option>
+                                
+                            </select><i class="form-select-custom--arrow"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Tilføj Button -->
+                <button id="btn" class="btn" onclick="myFunction()"><i class="fa fa-plus"></i> Tilføj Nyt Job</button>
+
+                <!-- Videre Button -->
+                <a id="btn2" class="btn2" href="opret4.html" onclick="nextFunction()"> Videre</a>
+
+
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var xx = ".js-hiddenform"
+        $('#btn').click(function() {
+            $(xx).slideDown();
+            xx = xx + 2;
+
+            if(xx.length > 16) {
+                alert("Maks 3 uddanelser kan tilføjes")
+            }
+        });
+    
+    </script>
+
+    <script>
+        var add_counter = 0; 
+
+        function myFunction() {
+            add_counter += 1;
+
+        } 
+
+        function nextFunction() {
+
+            var s1 = document.getElementById("s1").value;
+            var s2 = document.getElementById("s2").value;
+            var s3 = document.getElementById("s3").value;
+            var s4 = document.getElementById("s4").value;
+            var udd_navn1 = document.getElementById("u-navn1").value;
+            var sted_navn1 = document.getElementById("u-sted1").value;
+
+            $.sessionStorage('udd_navn1', udd_navn1);
+            $.sessionStorage('sted_navn1', sted_navn1);
+            $.sessionStorage('s1', s1);
+            $.sessionStorage('s2', s2);
+            $.sessionStorage('s3', s3);
+            $.sessionStorage('s4', s4);
+            
+            var d1 = document.getElementById("d1").value;
+            var d2 = document.getElementById("d2").value;
+            var d3 = document.getElementById("d3").value;
+            var d4 = document.getElementById("d4").value;
+            var udd_navn2 = document.getElementById("u-navn2").value;
+            var sted_navn2 = document.getElementById("u-sted2").value;
+
+            if(udd_navn2.length > 0 && sted_navn2.length > 0) {
+                $.sessionStorage('udd_navn2', udd_navn2);
+                $.sessionStorage('sted_navn2', sted_navn2);
+                $.sessionStorage('d1', d1);
+                $.sessionStorage('d2', d2);
+                $.sessionStorage('d3', d3);
+                $.sessionStorage('d4', d4);
+            }
+            
+            var g1 = document.getElementById("g1").value;
+            var g2 = document.getElementById("g2").value;
+            var g3 = document.getElementById("g3").value;
+            var g4 = document.getElementById("g4").value;
+            var udd_navn3 = document.getElementById("u-navn3").value;
+            var sted_navn3 = document.getElementById("u-sted3").value;
+        
+            if(udd_navn3.length > 0 && sted_navn3.length > 0) {
+                $.sessionStorage('udd_navn3', udd_navn3);
+                $.sessionStorage('sted_navn3', sted_navn3);
+                $.sessionStorage('g1', g1);
+                $.sessionStorage('g2', g2);
+                $.sessionStorage('g3', g3);
+                $.sessionStorage('g4', g4);
+            }
+        }
+           
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>
